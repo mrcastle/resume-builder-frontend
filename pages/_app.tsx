@@ -1,8 +1,27 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
+
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+
+import AuthWrapper from "../components/AuthWrapper/AuthWrapper";
+
+import "../styles/globals.css";
+
+const darkTheme = createTheme({
+  palette: {
+    mode: "dark",
+  },
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <AuthWrapper>
+        <Component {...pageProps} />
+      </AuthWrapper>
+    </ThemeProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
