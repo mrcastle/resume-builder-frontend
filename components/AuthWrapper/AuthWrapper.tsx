@@ -21,8 +21,6 @@ function AuthWrapper({ children }: AuthWrapperProps) {
     });
   }, []);
 
-  console.log("session", session);
-
   return (
     <div className={styles.Wrapper}>
       {!session?.user ? (
