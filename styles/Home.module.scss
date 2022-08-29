@@ -1,0 +1,21 @@
+.Container {
+  padding: 0 2rem;
+}
+
+.Main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .Paper {
+    width: 100%;
+    max-width: 1180px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+  }
+}
