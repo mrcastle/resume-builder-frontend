@@ -1,0 +1,21 @@
+.Wrapper {
+  padding: 40px;
+
+  .DisplayName {
+    padding: 10px;
+    font-size: 22px;
+    border-left: 8px solid #5f4e72;
+    border-bottom: 3px solid #5f4e72;
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .Summary {
+    margin-bottom: 20px;
+  }
+
+  .TechnicalSkillsTable {
+    padding: 0 60px;
+  }
+}

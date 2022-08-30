@@ -1,0 +1,13 @@
+.Wrapper {
+  &:not(:last-child) {
+    border-bottom: 2px solid #9890a2;
+  }
+
+  .Item {
+    padding: 20px 10px;
+
+    &:not(:last-child) {
+      border-right: 2px solid #9890a2;
+    }
+  }
+}
